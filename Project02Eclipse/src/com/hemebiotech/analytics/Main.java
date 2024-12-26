@@ -27,6 +27,6 @@ public class Main {
 
         Map<String, Integer> sortedSymptoms = analyticsCounter.sortSymptoms(symptomCount);
 
-        analyticsCounter.WriteSymptoms(sortedSymptoms);
+        analyticsCounter.writeSymptoms(sortedSymptoms);
     }
 }

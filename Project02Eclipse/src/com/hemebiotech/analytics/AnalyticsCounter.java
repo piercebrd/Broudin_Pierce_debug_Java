@@ -1,5 +1,8 @@
 package com.hemebiotech.analytics;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -61,7 +64,7 @@ public class AnalyticsCounter {
 	 * Method that prints the sorted Java Map to a specified file
 	 * @param symptoms A sorted Java map, with the symptoms and their counts
 	 */
-	public void WriteSymptoms(Map<String, Integer> symptoms) {
+	public void writeSymptoms(Map<String, Integer> symptoms) {
 		writer.writeSymptoms(symptoms);
 	}
 
