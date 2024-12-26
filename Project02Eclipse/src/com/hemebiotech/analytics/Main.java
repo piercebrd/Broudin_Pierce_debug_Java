@@ -21,12 +21,12 @@ public class Main {
 
         AnalyticsCounter analyticsCounter = new AnalyticsCounter(reader, writer);
 
-        List<String> symptoms = analyticsCounter.GetSymptoms();
+        List<String> symptoms = analyticsCounter.getSymptoms();
 
-        Map<String, Integer> symptomCount = analyticsCounter.CountSymptoms(symptoms);
+        Map<String, Integer> symptomCount = analyticsCounter.countSymptoms(symptoms);
 
         Map<String, Integer> sortedSymptoms = analyticsCounter.sortSymptoms(symptomCount);
 
-        analyticsCounter.WriteSymptoms(sortedSymptoms);
+        analyticsCounter.writeSymptoms(sortedSymptoms);
     }
 }

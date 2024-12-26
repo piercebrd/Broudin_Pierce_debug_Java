@@ -28,7 +28,7 @@ public class WriteSymptomDataToFile implements ISymptomWriter {
      */
 
     @Override
-    public void WriteSymptoms(Map<String, Integer> symptoms) {
+    public void writeSymptoms(Map<String, Integer> symptoms) {
         if (filepath != null && symptoms != null) {
             try (BufferedWriter writer = new BufferedWriter(new FileWriter(filepath))) {
                 for (Map.Entry<String, Integer> entry : symptoms.entrySet()) {
