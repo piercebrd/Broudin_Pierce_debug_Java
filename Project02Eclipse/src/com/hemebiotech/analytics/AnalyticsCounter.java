@@ -62,7 +62,7 @@ public class AnalyticsCounter {
 	 * @param symptoms A sorted Java map, with the symptoms and their counts
 	 */
 	public void WriteSymptoms(Map<String, Integer> symptoms) {
-		writer.WriteSymptoms(symptoms);
+		writer.writeSymptoms(symptoms);
 	}
 
 }
