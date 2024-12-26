@@ -1,8 +1,5 @@
 package com.hemebiotech.analytics;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.FileWriter;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -32,8 +29,8 @@ public class AnalyticsCounter {
 	 * Transform the input file into an exploitable java object
 	 * @return A java List with all the symptoms, unsorted, and not counted
 	 */
-	public List<String> GetSymptoms() {
-		return reader.GetSymptoms();
+	public List<String> getSymptoms() {
+		return reader.getSymptoms();
 	}
 
 	/**
@@ -42,7 +39,7 @@ public class AnalyticsCounter {
 	 * @return A Java Map whose key is the symptom and value is the amount of times it occurs
 	 */
 
-	public Map<String, Integer> CountSymptoms(List<String> symptoms) {
+	public Map<String, Integer> countSymptoms(List<String> symptoms) {
 		Map<String, Integer> result = new HashMap<String, Integer>();
 		for (String symptom : symptoms) {
 			result.put(symptom, result.getOrDefault(symptom, 0) + 1);
